@@ -1,0 +1,10 @@
+import java.util.Scanner;
+
+public class hellow {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Digite seu nome: ");
+        String name = input.next();
+        System.out.println("Olá " + name + " seja muito bem-vindo ao Java!");
+    }
+}
