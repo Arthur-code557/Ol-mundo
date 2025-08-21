@@ -1,2 +1,14 @@
-nome = (input("DIgite seu nome: "))
-print("Olá " , nome, "sejá bem-vindo ao Python.")
+nome = input("Digite seu nome: ")
+print("Olá ", nome, "seja muito bem-vindo ao Python")
+print("Queremos testar seus conhecimentos matemáticos. Vamos?")
+num1 = input("Digite um número: ")
+num1 = int(num1)
+num2 = input("Digite outro número: ")
+num2 = int(num2)
+soma = num1 + num2
+tal = input("Quanto cê acha que vai dar? ")
+tal = int(tal)
+if (soma == tal):
+    print("Parabéns, cê acertou!")
+else:
+    print("Parabéns, cê é muito burro kkkkkk")
