@@ -33,7 +33,7 @@ public class jkk {
                 pas1 = input.next();
                 System.out.println("Digite outro país: ");
                 pas2 = input.next();
-                if (pas1 == "Chile" & pas2 == "Equador") {
+                if (pas1 == "Chile" & pas2 == "Equador") {         // Arrumar depois, ver porque está dando sempre falso.
                     System.out.println("Parabéns, você acertou!");
                 } else {
                     System.out.println("Parabéns, você errou kkkkk");
