@@ -1,0 +1,60 @@
+import java.util.Scanner;
+
+public class jkk {
+    public static void main (String[] args) {
+        Scanner input = new Scanner(System.in);
+        double num;
+        int n;
+        String pas1;
+        String pas2;
+        String mus;
+        String name;
+        System.out.println("Digite seu nome: ");
+        name = input.next();
+        System.out.println("Olá, " + name+ " seja muito bem-vinbdo ao Java, queremos testar os seus conhecimentos aqui, para saber se você é inteligente ou não kkkkk. Vamos lá?");
+        System.out.println("Escolha um número de 0 a 2: ");
+        n = input.nextInt();
+        switch(n) {
+            case 0: {
+                System.out.println("Resolva essa conta matemática:");
+                System.out.println("Quanto é 4 + 4? ");
+                num = input.nextDouble();
+                if (num == 8) {
+                    System.out.println("Parabéns, você acertou.");
+                } else {
+                    System.out.println("Parabéns, você errou kkkkk.");
+                }
+                break;
+            }
+            case 1: {
+
+                System.out.println("Responda a essa questão de Geografia:");
+                System.out.println("Digite um país que não faz fronteira com o Brasil, mas fica no mesmo continente que ele: ");
+                pas1 = input.next();
+                System.out.println("Digite outro país: ");
+                pas2 = input.next();
+                if (pas1 == "Chile" & pas2 == "Equador") {
+                    System.out.println("Parabéns, você acertou!");
+                } else {
+                    System.out.println("Parabéns, você errou kkkkk");
+                }
+                break;
+            }
+            case 2: {
+                System.out.println("Responda a uma questão de música popular brasileira:");
+                System.out.println("Qual é o gênero musical de Caetano Veloso, Gilberto Gil e Maria Betânia? ");
+                mus = input.next();
+                if (mus == "MPB") {
+                    System.out.println("Parabéns, você acertou!!!");
+                } else {
+                    System.out.println("Parabéns, você é muito burro mesmo kkkkkkk");
+                }
+                break;
+            }
+            default:{
+                System.out.println("É zero, um ou dois animal de teta kkkkkkkkk");
+            }
+        }
+        System.out.println("Obrigado por jogar, espero você em outro código. Ate mais :)");
+    }
+}
