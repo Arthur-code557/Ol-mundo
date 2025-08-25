@@ -1,0 +1,49 @@
+name = input("Digite seu nome: ")
+print("Olá, " , name, "bem-vindo ao Python, queremos testar os seus conhecimentos de algumas áreas específicas, de sua escolha óbvio kkk. Pronto?")
+num = input("Escolha um número de 0 a 3: ")
+num = int(num)
+match num:
+    case 0:
+        print("Responda essa questão de Matemática: ")
+        ques = input("Quanto é 2 + 2?")
+        ques = float(ques)
+        if ques == 4:
+            print("Parabéns, você acertou!")
+        else:
+            print("Parabéns, você é muito burro kkkkkk")
+    case 1:
+        print("Reponda uma questão de Geografia: ")
+        pas1 = input("Qual é o país que não faz fronteira com o Brasil? ")
+        pas2 = input("E qual é o segundo? ")
+        if pas1 == "Chile" and pas2 == "Equador":
+            print("Parabéns, vocÊ acertou!!")
+        else:
+            print("Parabéns, você errou e muito kkkkkk")
+        
+    case 2:
+        print("Responda a uma questão de História:")
+        question = "Qual foi o Presidente da República que fez a 1º Rodovia que chega até o sul do Brasil?"
+        options = {
+            "A": "Getúlio Vargas.",
+            "B": "Deodoro da Fonseca.",
+            "C": "Luiz Inácio Lula da Silva.",
+            "D": "Jair Bolsonaro.",
+            "E": "Juscelino Kubitschek."
+        }
+        print(question)
+        for key, value in options.items():
+            print(f"{key}: {value}")
+        answer = input("Escolha o item correto (A, B, C, D, E): ").upper()
+        if answer == "E":
+            print("Parabéns, você acertou!!")
+        elif answer in options:
+            print(f"Que pena você errou, a resposta certa era a E: {options['E']}")
+        else:
+            print("É pra ser A, B, C, D ou E, sua mula kkkkkkkk")
+    case 3:
+        print("Responda a uma questão de música comtenporânea:")
+        mus = input("Qual é o estilo musical do Caetano Veloso, Gilberto Gil e de Maria Betânia? ")
+        if (mus == 'MPB'):
+            print("Parabéns, você acertou!!")
+        else:
+            print("Parabéns, você é a vergonha da profissão kkkkkkkk")
